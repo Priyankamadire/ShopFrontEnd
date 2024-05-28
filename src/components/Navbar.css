@@ -1,0 +1,17 @@
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .nav-link {
+    color: #333;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  

@@ -1,0 +1,49 @@
+.product-list-container {
+  padding: 20px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.search-input,
+.filter-dropdown {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Additional styles for ProductCard component */
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product-card-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product-card-price {
+  font-size: 1em;
+  color: #333;
+}

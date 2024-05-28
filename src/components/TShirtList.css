@@ -1,0 +1,73 @@
+/* TShirtList.css */
+.table-container {
+  overflow-x: auto;
+}
+
+.tshirt-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.save-button{
+  background-color: rgb(250, 227, 22);
+}
+.cancel-button{
+  background-color: rgb(245, 118, 45);
+}
+.edit-button{
+  background-color: rgb(61, 179, 3);
+}
+.delete-button{
+  background-color: rgb(253, 26, 26);
+}
+.tshirt-table th,
+.tshirt-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tshirt-table th {
+  background-color: #f2f2f2;
+}
+
+.tshirt-table img {
+  max-width: 50px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tshirt-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .tshirt-table th,
+  .tshirt-table td {
+    display: inline-block;
+    min-width: 150px;
+    vertical-align: top;
+    border: none;
+  }
+
+  .tshirt-table th {
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tshirt-table td:first-child {
+    border-top: 1px solid #ddd;
+  }
+
+  .tshirt-table td:last-child {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .edit-button,
+  .delete-button,
+  .save-button,
+  .cancel-button {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
