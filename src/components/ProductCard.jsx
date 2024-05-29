@@ -4,7 +4,7 @@ import "./ProductCard.css";
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useContext(CartContext);
-
+  // const { fullcard } = useContext(CartContext);
   return (
     <div className="product-card">
       <img

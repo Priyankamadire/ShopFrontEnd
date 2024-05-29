@@ -11,15 +11,17 @@ export const CartProvider = ({ children }) => {
     return savedCart ? JSON.parse(savedCart) : [];
   });
 
-  // Function to add a product to the cart
   const addToCart = (product) => {
     setCart((prevCart) => {
       const existingProduct = prevCart.find((item) => item._id === product._id);
       if (existingProduct) {
+        const newQuantity = existingProduct.quantity + 1;
+        if (newQuantity > product.quantity) {
+          alert(`${product.quantity}`);
+          return prevCart;
+        }
         return prevCart.map((item) =>
-          item._id === product._id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
+          item._id === product._id ? { ...item, quantity: newQuantity } : item
         );
       } else {
         return [...prevCart, { ...product, quantity: 1 }];

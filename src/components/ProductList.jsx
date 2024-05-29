@@ -29,6 +29,10 @@ const ProductList = () => {
     const matchesGender = genderFilter ? product.gender === genderFilter : true;
     const matchesColor = colorFilter ? product.color === colorFilter : true;
     const matchesType = typeFilter ? product.type === typeFilter : true;
+
+    const priceRange = priceRangeFilter.split("-");
+    console.log(priceRange);
+
     const matchesPriceRange =
       priceRangeFilter === ""
         ? true
